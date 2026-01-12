@@ -11,7 +11,7 @@ export default function Header() {
         </div>
         <div className="navbar">
             <ul>
-              <li><Link to={"/"}>Home</Link></li>
+              <li><Link to={"/"}>Home 123</Link></li>
               <li><Link to={"/about"}>About</Link></li>
               <li><Link to={"/service"}>Service</Link></li>
               <li className='parentmenu'><Link to={"/projects"}>Projects</Link>
