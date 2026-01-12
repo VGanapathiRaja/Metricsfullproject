@@ -1,0 +1,44 @@
+.contactquessec{
+    padding: 60px 60px;
+    background-color: rgb(207, 221, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactquessec .heroleft{
+    /* background-color: antiquewhite; */
+    padding: 30px 20px;
+    margin: 10px 5px;
+    width: 500px;
+}
+.contactquessec .heroleft h2{
+    font-size: 46px;
+    padding: 10px 5px;
+}
+.contactquessec .heroleft p{
+    font-size: 16px;
+    padding: 5px;
+}
+.heroleft .ss{
+    color: #02400f;
+    font-size: 66px;
+   text-shadow: 4px -1px 3px #2f7654;
+}
+.contactquessec .heroright{
+    width: 500px;
+}
+.contactquessec .heroright img{
+    width: 100%;
+    padding: 10px;
+}
+
+@media(min-width: 320px) and (max-width:480px){
+    .contactquessec{
+        display: block;
+        padding: 60px 0;
+    }
+    .contactquessec .heroleft,.contactquessec .heroright{
+        width: 100%;
+        margin: 10px 0;
+    }
+}

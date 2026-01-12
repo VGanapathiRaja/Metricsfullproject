@@ -1,0 +1,44 @@
+.passionsec{
+    padding: 60px 60px;
+    background-color: rgb(153, 170, 185);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.passionsec .heroleft{
+    /* background-color: antiquewhite; */
+    padding: 30px 20px;
+    margin: 10px 5px;
+    width: 500px;
+}
+.passionsec .heroleft h2{
+    font-size: 46px;
+    padding: 10px 5px;
+}
+.passionsec .heroleft p{
+    font-size: 16px;
+    padding: 5px;
+}
+.heroleft .ss{
+    color: #02400f;
+    font-size: 66px;
+   text-shadow: 4px -1px 3px #2f7654;
+}
+.passionsec .heroright{
+    width: 500px;
+}
+.passionsec .heroright img{
+    width: 70%;
+    padding: 10px;
+}
+
+@media(min-width: 320px) and (max-width:480px){
+    .passionsec{
+        display: block;
+        padding: 60px 0;
+    }
+    .passionsec .heroleft,.passionsec .heroright{
+        width: 100%;
+        margin: 10px 0;
+    }
+}

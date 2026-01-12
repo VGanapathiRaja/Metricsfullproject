@@ -1,0 +1,77 @@
+.menubar{
+    background-color: aliceblue;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo img{
+    width: 200px;
+    padding: 5px;
+}
+.logo .mobiletoggle{
+    font-size: 22px;
+    display: none;
+}
+.menubar ul li{
+    list-style-type: none;
+    padding: 10px;
+    display: inline-block;
+}
+.menubar ul li:hover{
+    background-color: bisque;
+    transition: all 0.5s ease-in-out;
+}
+.menubar ul li:hover a{
+    font-weight: 600;
+}
+.menubar ul li a{
+    text-decoration: none;
+}
+.menubar .parentmenu{
+    position: relative;
+}
+.menubar .parentmenu:hover .childmenu{
+    display: block;
+}
+.menubar .childmenu{
+    position: absolute;
+    left: 0;
+    top: 40px;
+    display: none;
+}
+.menubar .childmenu li{
+    display: block;
+    background-color: beige;
+    margin: 5px 0;
+    width: 170px;
+}
+
+
+@media (min-width:320px) and (max-width:480px){
+    .menubar{
+        display: block;
+        position: relative;
+    }
+    .logo .mobiletoggle{
+        display: block;
+    }
+    .menubar ul li{
+        display: block;
+    }
+    .navbar{
+        background-color: aquamarine;
+        padding: 10px 10px;
+        position: absolute;
+        width: 100%;
+        left: -99%;
+    }
+    .navbar.open{
+        left: 0;
+    }
+}

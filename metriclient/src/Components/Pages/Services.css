@@ -1,0 +1,36 @@
+.servicesec{
+    padding: 60px 60px;
+    background-color: azure;
+}
+.heading{
+    width: 500px;
+}
+.heading h1{
+    font-size: 46px;
+    padding: 10px 5px;
+}
+.heading span{
+    color: #02400f;
+    font-size: 56px;
+   text-shadow: 4px -1px 3px #6ed6a4;
+}
+.serviceboxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+
+@media (min-width:320px) and (max-width: 480px) {
+    .serviceboxes{
+        display: block;
+    }
+    .servicesec{
+        padding: 60px 0;
+    }
+    .heading{
+        width: inherit;
+        padding: 10px;
+    }
+}

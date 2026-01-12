@@ -1,0 +1,33 @@
+.btngrp{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.btngrp button{
+    padding: 10px 30px;
+    margin: 5px 8px;
+    border: 5px solid rgb(4, 190, 4);
+    font-size: 18px;
+    color: #02400f;
+    width: 50%;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}   
+.btngrp button:nth-child(1){
+    background-color: #5fe97d;
+}
+.btngrp button:hover{
+    background-color: #5fe97d;
+    color: #fff;
+    transition: all 0.5s ease-out;
+    font-weight: 700;
+}
+
+@media(min-width: 320px) and (max-width:480px){
+    .btngrp{
+        display: block;
+    }
+    .btngrp button{
+        width: 100%;
+    }
+}

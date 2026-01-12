@@ -1,0 +1,92 @@
+.contactse{
+    padding: 60px 60px;
+    background-color: rgb(207, 221, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactse .heroleft{
+    /* background-color: antiquewhite; */
+    padding: 30px 20px;
+    margin: 10px 5px;
+    width: 500px;
+}
+.contactse .heroleft h2{
+    font-size: 46px;
+    padding: 10px 5px;
+}
+.contactse .heroleft p{
+    font-size: 16px;
+    padding: 5px;
+}
+.contactse .ss{
+    color: #02400f;
+    font-size: 66px;
+   text-shadow: 4px -1px 3px #2f7654;
+}
+.contactse .heroright{
+    width: 500px;
+}
+.contactse .heroright img{
+    width: 100%;
+    padding: 10px;
+}
+.formsec{
+    background-color: aliceblue;
+    padding: 25px 30px;
+    margin: 10px 5px;
+}
+.formsec .feilds{
+    padding: 10px 5px;
+    margin: 5px 0;
+}
+.formsec .feilds label{
+    font-size: 18px;
+}
+.feilds input,.feilds textarea{
+    padding: 10px 5px;
+    width: 100%;
+    outline: none;
+    border: 1px solid greenyellow;
+    color: #2f7654;
+    font-size: 18px;
+}
+.feilds p{
+    color: red;
+    font-size: 14px;
+    padding: 5px 0px;
+}
+
+.feilds button{
+    padding: 10px 30px;
+    margin: 5px 8px;
+    border: 5px solid rgb(4, 190, 4);
+    font-size: 18px;
+    color: #02400f;
+    width: 50%;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}   
+.feilds button:nth-child(1){
+    background-color: #5fe97d;
+}
+.feilds button:hover{
+    background-color: #5fe97d;
+    color: #fff;
+    transition: all 0.5s ease-out;
+    font-weight: 700;
+}
+
+@media(min-width: 320px) and (max-width:480px){
+    .contactse{
+        display: block;
+        padding: 60px 0;
+    }
+    .contactse .heroleft,.contactse .heroright{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .feilds button{
+        width: 100%;
+    }
+}
