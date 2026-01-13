@@ -19,8 +19,18 @@ export default function Signin() {
         console.log("Data sended..!");
         setSign({semail:"",spass:""});
         try{
-            await axios.post(process.env.GLobal_server,sign);
+           const res = await axios.post(
+            // process.env.REACT_APP_LOCAL_SERVER,
+            process.env.REACT_APP_GLOBAL_SERVER,
+            sign,
+            {
+                headers: {
+                "Content-Type": "application/json"
+                }
+            }
+           );
             alert("data sended to backend");
+            console.log(res.data);
         }
         catch(err){
             if(err){

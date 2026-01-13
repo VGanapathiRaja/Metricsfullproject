@@ -8,7 +8,7 @@ require('dotenv').config();
 const app = express();
 app.use(cors());
 app.use(express.json());
-
+app.use(express.urlencoded({ extended: true }));
 // mongoose.connect("mongodb://localhost:27017/Metrics",{useNewUrlParser:true,useUnifiedTopology:true})
 // mongoose.connect("mongodb://localhost:27017/Metrics")
 // mongoose.connect(process.env.Mongodb_Local_URL)
