@@ -6,7 +6,15 @@ const Db =require("./modal/db");
 require('dotenv').config();
 
 const app = express();
-app.use(cors());
+// app.use(cors());
+app.use(cors({
+  origin: [
+    "https://metricsfullprojectclient-am6workku-vganapathirajas-projects.vercel.app"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: false
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 // mongoose.connect("mongodb://localhost:27017/Metrics",{useNewUrlParser:true,useUnifiedTopology:true})
