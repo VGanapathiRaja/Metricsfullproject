@@ -45,11 +45,13 @@ app.post("/sign",async(req,res)=>{
     }
 });
 
-app.listen(PORT,(err)=>{
-    if(err){
-        console.error("backend errro",err);
-    }
-    else{
-        console.log(`server running on port ${PORT}`);
-    }
-})
+// app.listen(PORT,(err)=>{
+//     if(err){
+//         console.error("backend errro",err);
+//     }
+//     else{
+//         console.log(`server running on port ${PORT}`);
+//     }
+// })
+
+module.exports =app;
