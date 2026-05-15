@@ -6,22 +6,22 @@ const Db =require("./modal/db");
 require('dotenv').config();
 
 const app = express();
-// app.use(cors());
-app.use(cors({
-  origin: [
-    "https://metricsfullprojectclient-am6workku-vganapathirajas-projects.vercel.app"
-  ],
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-  credentials: false
-}));
+app.use(cors());
+// app.use(cors({
+//   origin: [
+//     "https://metricsfullprojectclient-am6workku-vganapathirajas-projects.vercel.app"
+//   ],
+//   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+//   allowedHeaders: ["Content-Type", "Authorization"],
+//   credentials: false
+// }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 // mongoose.connect("mongodb://localhost:27017/Metrics",{useNewUrlParser:true,useUnifiedTopology:true})
 // mongoose.connect("mongodb://localhost:27017/Metrics")
 // mongoose.connect(process.env.Mongodb_Local_URL)
 // mongoose.connect("mongodb+srv://vgrsoftlogic:vgr1234567@cluster0.ezxwamt.mongodb.net/Metrics?appName=Cluster0")
-mongoose.connect(process.env.Mongodb_cluster_URL)
+mongoose.connect(process.env.Mongodb_Local_URL)
 .then(()=>{console.log("Mongod db connected")})
 .catch((err)=>{console.error("mongodb not connected",err)})
 
@@ -53,13 +53,13 @@ app.post("/sign",async(req,res)=>{
     }
 });
 
-// app.listen(PORT,(err)=>{
-//     if(err){
-//         console.error("backend errro",err);
-//     }
-//     else{
-//         console.log(`server running on port ${PORT}`);
-//     }
-// })
+app.listen(PORT,(err)=>{
+    if(err){
+        console.error("backend errro",err);
+    }
+    else{
+        console.log(`server running on port ${PORT}`);
+    }
+})
 
-module.exports =app;
+// module.exports =app;

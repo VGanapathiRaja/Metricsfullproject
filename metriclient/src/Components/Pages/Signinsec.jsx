@@ -20,8 +20,8 @@ export default function Signin() {
         setSign({semail:"",spass:""});
         try{
            const res = await axios.post(
-            // process.env.REACT_APP_LOCAL_SERVER,
-            process.env.REACT_APP_GLOBAL_SERVER,
+            process.env.REACT_APP_LOCAL_SERVER,
+            // process.env.REACT_APP_GLOBAL_SERVER,
             sign,
             {
                 headers: {
